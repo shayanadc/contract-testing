@@ -1,5 +1,5 @@
-I, [2024-05-02T22:32:31.247717 #67087]  INFO -- : Registered expected interaction GET /users
-D, [2024-05-02T22:32:31.247935 #67087] DEBUG -- : {
+I, [2024-05-02T22:33:37.155634 #67479]  INFO -- : Registered expected interaction GET /users
+D, [2024-05-02T22:33:37.155801 #67479] DEBUG -- : {
   "description": "User collection is requested",
   "providerState": "user list",
   "request": {
@@ -24,11 +24,11 @@ D, [2024-05-02T22:32:31.247935 #67087] DEBUG -- : {
       "json_class": "Pact::SomethingLike",
       "contents": [
         {
-          "id": 123,
+          "id": "123",
           "firstName": "XYZ"
         },
         {
-          "id": 124,
+          "id": "124",
           "firstName": "ABS"
         }
       ]
@@ -36,20 +36,20 @@ D, [2024-05-02T22:32:31.247935 #67087] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2024-05-02T22:32:31.257408 #67087]  INFO -- : Received request GET /users
-D, [2024-05-02T22:32:31.257513 #67087] DEBUG -- : {
+I, [2024-05-02T22:33:37.160766 #67479]  INFO -- : Received request GET /users
+D, [2024-05-02T22:33:37.160839 #67479] DEBUG -- : {
   "path": "/users",
   "query": "",
   "method": "get",
   "headers": {
-    "Host": "localhost:50361",
+    "Host": "localhost:50402",
     "User-Agent": "Go-http-client/1.1",
     "Accept-Encoding": "gzip",
     "Version": "HTTP/1.1"
   }
 }
-I, [2024-05-02T22:32:31.257726 #67087]  INFO -- : Found matching response for GET /users
-D, [2024-05-02T22:32:31.257776 #67087] DEBUG -- : {
+I, [2024-05-02T22:33:37.161051 #67479]  INFO -- : Found matching response for GET /users
+D, [2024-05-02T22:33:37.161095 #67479] DEBUG -- : {
   "status": 200,
   "headers": {
   },
@@ -57,16 +57,16 @@ D, [2024-05-02T22:32:31.257776 #67087] DEBUG -- : {
     "json_class": "Pact::SomethingLike",
     "contents": [
       {
-        "id": 123,
+        "id": "123",
         "firstName": "XYZ"
       },
       {
-        "id": 124,
+        "id": "124",
         "firstName": "ABS"
       }
     ]
   }
 }
-I, [2024-05-02T22:32:31.258442 #67087]  INFO -- : Verifying - interactions matched
-I, [2024-05-02T22:32:31.259018 #67087]  INFO -- : Cleared interactions
-I, [2024-05-02T22:32:31.261843 #67087]  INFO -- : Writing pact for example-server to /Users/shayan-shho/Sites/contract-testing-pres/client/pacts/example-client-example-server.json
+I, [2024-05-02T22:33:37.161576 #67479]  INFO -- : Verifying - interactions matched
+I, [2024-05-02T22:33:37.162064 #67479]  INFO -- : Cleared interactions
+I, [2024-05-02T22:33:37.165143 #67479]  INFO -- : Writing pact for example-server to /Users/shayan-shho/Sites/contract-testing-pres/client/pacts/example-client-example-server.json

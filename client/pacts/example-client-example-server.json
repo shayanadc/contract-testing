@@ -25,11 +25,11 @@
         },
         "body": [
           {
-            "id": 123,
+            "id": "123",
             "firstName": "XYZ"
           },
           {
-            "id": 124,
+            "id": "124",
             "firstName": "ABS"
           }
         ],
