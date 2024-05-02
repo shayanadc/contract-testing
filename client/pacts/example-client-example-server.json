@@ -1,0 +1,49 @@
+{
+  "consumer": {
+    "name": "example-client"
+  },
+  "provider": {
+    "name": "example-server"
+  },
+  "interactions": [
+    {
+      "description": "User collection is requested",
+      "providerState": "user list",
+      "request": {
+        "method": "GET",
+        "path": "/users",
+        "matchingRules": {
+          "$.path": {
+            "match": "regex",
+            "regex": "\\/users*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": [
+          {
+            "id": 123,
+            "firstName": "XYZ"
+          },
+          {
+            "id": 124,
+            "firstName": "ABS"
+          }
+        ],
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
