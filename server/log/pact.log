@@ -83,3 +83,9 @@ D, [2024-05-02T21:14:24.782827 #61195] DEBUG -- : body :
 I, [2024-05-02T21:14:24.794491 #61195]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"64", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 19:14:24 GMT"}, see debug logs for body
 D, [2024-05-02T21:14:24.794533 #61195] DEBUG -- : body: [{"id":"1","firstName":"Arjun"},{"id":"2","firstName":"Sarah"}]
 
+I, [2024-05-02T22:32:43.275736 #67201]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given user list User collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T22:32:43.276612 #67201]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"user list"}]}, see debug logs for body
+D, [2024-05-02T22:32:43.276637 #67201] DEBUG -- : body :
+I, [2024-05-02T22:32:43.288868 #67201]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"64", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 20:32:43 GMT"}, see debug logs for body
+D, [2024-05-02T22:32:43.288917 #67201] DEBUG -- : body: [{"id":"1","firstName":"Arjun"},{"id":"2","firstName":"Sarah"}]
+

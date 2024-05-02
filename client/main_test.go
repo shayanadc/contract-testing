@@ -30,11 +30,11 @@ func TestClientPact_Local(t *testing.T) {
 				Status: 200,
 				Body: dsl.Like([]User{
 					{
-						ID:        123,
+						ID:        "123",
 						FirstName: "XYZ",
 					},
 					{
-						ID:        124,
+						ID:        "124",
 						FirstName: "ABS",
 					},
 				}),
