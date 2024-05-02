@@ -1,0 +1,72 @@
+I, [2024-05-02T23:19:22.715484 #81172]  INFO -- : Registered expected interaction GET /users
+D, [2024-05-02T23:19:22.715645 #81172] DEBUG -- : {
+  "description": "User Collection is requested",
+  "providerState": "User Lists",
+  "request": {
+    "method": "GET",
+    "path": {
+      "json_class": "Pact::Term",
+      "data": {
+        "generate": "/users",
+        "matcher": {
+          "json_class": "Regexp",
+          "o": 0,
+          "s": "/users"
+        }
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": [
+        {
+          "id": "1",
+          "name": "John"
+        },
+        {
+          "id": "2",
+          "name": "Alice"
+        }
+      ]
+    }
+  },
+  "metadata": null
+}
+I, [2024-05-02T23:19:22.724453 #81172]  INFO -- : Received request GET /users
+D, [2024-05-02T23:19:22.724519 #81172] DEBUG -- : {
+  "path": "/users",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:51986",
+    "User-Agent": "Go-http-client/1.1",
+    "Accept-Encoding": "gzip",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2024-05-02T23:19:22.724728 #81172]  INFO -- : Found matching response for GET /users
+D, [2024-05-02T23:19:22.724784 #81172] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": [
+      {
+        "id": "1",
+        "name": "John"
+      },
+      {
+        "id": "2",
+        "name": "Alice"
+      }
+    ]
+  }
+}
+I, [2024-05-02T23:19:22.725355 #81172]  INFO -- : Verifying - interactions matched
+I, [2024-05-02T23:19:22.725851 #81172]  INFO -- : Cleared interactions
+I, [2024-05-02T23:19:22.728809 #81172]  INFO -- : Writing pact for example-server to /Users/shayan-shho/Sites/contract-testing-pres/client/pacts/example-client-example-server.json
