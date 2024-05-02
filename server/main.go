@@ -6,7 +6,7 @@ import (
 )
 
 type User struct {
-	ID   string `json:"id"`
+	ID   int    `json:"id"`
 	Name string `json:"name"`
 }
 
@@ -21,11 +21,11 @@ func GetUsers(w http.ResponseWriter, r *http.Request) {
 
 	users := []User{
 		{
-			ID:   "1",
+			ID:   1,
 			Name: "Arjun",
 		},
 		{
-			ID:   "2",
+			ID:   2,
 			Name: "Sarah",
 		},
 	}

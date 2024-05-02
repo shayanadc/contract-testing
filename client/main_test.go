@@ -6,6 +6,7 @@ import (
 	"testing"
 
 	"github.com/pact-foundation/pact-go/dsl"
+	"github.com/pact-foundation/pact-go/types"
 )
 
 func TestClientPact_Local(t *testing.T) {
@@ -31,11 +32,11 @@ func TestClientPact_Local(t *testing.T) {
 				Status: 200,
 				Body: dsl.Like([]User{
 					{
-						ID:   "1",
+						ID:   1,
 						Name: "John",
 					},
 					{
-						ID:   "2",
+						ID:   2,
 						Name: "Alice",
 					},
 				}),
@@ -63,6 +64,21 @@ func TestClientPact_Local(t *testing.T) {
 	})
 
 	if err := pact.WritePact(); err != nil {
+		t.Fatal(err)
+	}
+
+	publisher := dsl.Publisher{}
+
+	err := publisher.Publish(types.PublishRequest{
+
+		PactURLs:        []string{"./pacts/"},
+		PactBroker:      "https://shayanadc.pactflow.io",
+		BrokerToken:     "v_kaCEiuq-RpacJQflqV4g",
+		ConsumerVersion: "1.0.0",
+		Tags:            []string{"1.0.0", "latest"},
+	})
+
+	if err != nil {
 		t.Fatal(err)
 	}
 

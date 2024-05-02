@@ -14,8 +14,17 @@ func TestServerPact_Verification(t *testing.T) {
 	}
 
 	_, err := pact.VerifyProvider(t, types.VerifyRequest{
+		BrokerURL:       "https://shayanadc.pactflow.io",
+		BrokerToken:     "v_kaCEiuq-RpacJQflqV4g",
 		ProviderBaseURL: "http://127.0.0.1:8080",
-		PactURLs:        []string{"../client/pacts/example-client-example-server.json"},
+		ProviderVersion: "1.0.0",
+		ConsumerVersionSelectors: []types.ConsumerVersionSelector{
+			{
+				Consumer: "example-client",
+				Tag:      "1.0.0",
+			},
+		},
+		PublishVerificationResults: true,
 	})
 
 	if err != nil {
