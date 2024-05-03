@@ -76,3 +76,87 @@ Firstly, you could wait until there's an actual fire in your home to see if the 
 Alternatively, you could simply press the alarm's test button to check if it produces sound. While this method confirms that the alarm is capable of making noise, it doesn't necessarily replicate real-life conditions accurately.
 
 The most effective approach, akin to a smoke test, involves simulating a realistic scenario by introducing smoke to the alarm's sensors. This method provides a thorough evaluation of the alarm's performance in a situation closely resembling an actual fire, ensuring its reliability when it truly matters.
+
+
+### Coding
+
+Imagine we have a microservice architecture with two services which communicate with each other with HTTP. Clinet needs to get the list of users from server and want to be confident to realease.
+
+### Checkout Step-One
+
+First, we need to have unit test in client service with mocking the provider response. Client service send the http request to server :
+
+```
+	uri := fmt.Sprintf("http://%s/users", host)
+
+	resp, err := http.Get(uri)
+```
+and for the response we mock:
+```
+    []User{
+					{
+						ID:   "1",
+						Name: "John",
+					},
+					{
+						ID:   "2",
+						Name: "Alice",
+					},
+				}
+```
+
+Now, we need to add interaction with pactflow API to create and publish the pact between client and server.
+
+```
+		pact.
+			AddInteraction().
+			Given("User Lists").
+			UponReceiving("User Collection is requested").
+			WithRequest(dsl.Request{
+				Method: "GET",
+				Path:   dsl.Term("/users", "/users*"),
+			}).
+			WillRespondWith(dsl.Response{
+				Status: 200,
+				Body: dsl.Like([]User{
+					{
+						ID:   "1",
+						Name: "John",
+					},
+					{
+						ID:   "2",
+						Name: "Alice",
+					},
+				}),
+			})
+```
+
+for specifiying the path in the interaction, we can use regex to cover all possible path variations of user endpoint like users/active or users?name=xyz to simplify the mocking and avoiding the repetitive job.
+```
+				Path:   dsl.Term("/users", "/users*"),
+```
+
+From the server side you only need to run your service against of the contract file which it creates after running the mock test of the client.
+
+```
+	_, err := pact.VerifyProvider(t, types.VerifyRequest{
+		ProviderBaseURL: "http://127.0.0.1:8080",
+		PactURLs:        []string{"../client/pacts/example-client-example-server.json"},
+	})
+```
+
+but as you see, the server test is running against of a local file but in microservice architecutre two different system is usually deployed in different environemnts. So we need to publish the pact file to pactflow server and run the verification against of the published pact url.
+
+### Checkout Step-Two
+
+
+we only need to call pact broker to upload the contract after writing by client side
+
+```
+	publisher.Publish(types.PublishRequest{})
+```
+and from the server side, instead of checking the interaction from local file, check it with broker:
+
+```
+  pact.VerifyProvider(t, types.VerifyRequest{})
+```
