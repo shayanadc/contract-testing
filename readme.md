@@ -51,7 +51,7 @@ It always not easy to affect other team whether they are in your organization or
 
 We started to write some behavioural test to cover the third api’s behaviour in our development process with Gherkin.
 
-![image](https://github.com/shayanadc/contract-testing/assets/6294224/3cc8a2fd-630a-4bbe-bc1c-f5198f66068e)
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/89319968-6e26-4696-a155-ae599ba9acbe)
 
 ```
   Scenario: Get The List Of Users
