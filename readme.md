@@ -108,7 +108,7 @@ Alternatively, you could simply press the alarm's test button to check if it pro
 The most effective approach, akin to a smoke test, involves simulating a realistic scenario by introducing smoke to the alarm's sensors. This method provides a thorough evaluation of the alarm's performance in a situation closely resembling an actual fire, ensuring its reliability when it truly matters.
 
 
-### Coding
+### Action
 
 Imagine we have a microservice architecture with two services which communicate with each other with HTTP. Clinet needs to get the list of users from server and want to be confident to realease.
 
