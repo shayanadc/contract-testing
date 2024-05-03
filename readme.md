@@ -67,11 +67,13 @@ While we thought everything should be good now, we released the new version but 
 Again we categorized the cause to improve the solution…
 
 ### Second Attempt 
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/cc746446-e6ae-4899-8453-50e3191d7293)
+
 Yes, they had testable documentation which really reflect their code implementation but they were free to change their implementation without informing us and we only aware of them when we failed.
 
 Yes, we had another test layer (BDD) but it was based on our mock and our mock was based on the version of their APIs which was easily changable.
 
-In fact, we realized that what we need is more than code level and we need to have a more efficient collaboration with our third API
+In fact, we realized that what we need is more than code level and we need to have a more efficient collaboration with our third APIs
 
 In fact we needed to be informed by them before applying any changes to apply it in our internal code if it needs and keep our code more sync.
 
