@@ -161,7 +161,8 @@ Now, we need to add interaction with pactflow API to create and publish the pact
 		})
 ```
 
-for specifying, the path in the interaction, we can use regex to cover all possible path variations of user endpoint like users/active or users?name=xyz to simplify the mocking and avoiding the repetitive job.
+for specifying, the path in the interaction, we can use regex to cover all possible path variations of user endpoint like users/active or users?name=xyz to simplify the mocking and avoiding repetition yourself.
+
 ```
 	Path:   dsl.Term("/users", "/users*"),
 ```
