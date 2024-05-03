@@ -46,9 +46,13 @@ First, we came up with the idea of keeping the partners code more align with the
 ```
 
 ### First Attempt 
+
 It always not easy to affect other team whether they are in your organization or not. But we successed to do that for some of the partners at least.
 
 We started to write some behavioural test to cover the third api’s behaviour in our development process with Gherkin.
+
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/93adcf42-4fac-4b79-940f-33ebe546ccfd)
+
 
 ```
   Scenario: Get The List Of Users
@@ -67,16 +71,18 @@ While we thought everything should be good now, we released the new version but 
 Again we categorized the cause to improve the solution…
 
 ### Second Attempt 
+
 ![image](https://github.com/shayanadc/contract-testing/assets/6294224/cc746446-e6ae-4899-8453-50e3191d7293)
 
 Yes, they had testable documentation which really reflect their code implementation but they were free to change their implementation without informing us and we only aware of them when we failed.
-
 
 Yes, we had another test layer (BDD) but it was based on our mock and our mock was based on the version of their APIs which was easily changable.
 
 In fact, we realized that what we need is more than code level and we need to have a more efficient collaboration with our third APIs
 
 In fact we needed to be informed by them before applying any changes to apply it in our internal code if it needs and keep our code more sync.
+
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/ea096205-6e71-4b3a-9b1a-991ae892bf5e)
 
 We introduced a specialized position within our company tasked with the responsibility of reaching out to our partners. Their primary objective is to gather updates regarding any modifications made or planned for their APIs
 
@@ -89,6 +95,8 @@ But we always heard some like excuses like :
 Distributed system does mean decoupled system.
 
 In fact, we lessont that the it’s too late to detect the changes on your partner side, the part of their service which is related to you since your consuming it, because your customer might be get that error sooner.
+
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/863beeac-e75e-4ce6-8afa-297a242a173a)
 
 ## Unit Test vs Contract Test
 
