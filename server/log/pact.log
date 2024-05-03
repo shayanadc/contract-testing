@@ -1,0 +1,98 @@
+# Logfile created on 2024-05-02 23:05:33 +0200 by logger.rb/56815
+I, [2024-05-02T23:05:34.045269 #76140]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users/1 returns a response which has status code 200'
+I, [2024-05-02T23:05:34.045724 #76140]  INFO -- : Sending GET request to path: "/users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:05:34.045743 #76140] DEBUG -- : body :
+I, [2024-05-02T23:05:34.059476 #76140]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:05:34 GMT"}, see debug logs for body
+D, [2024-05-02T23:05:34.059520 #76140] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:06:49.201856 #76496]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users/1 returns a response which has status code 200'
+I, [2024-05-02T23:06:49.202473 #76496]  INFO -- : Sending GET request to path: "/users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:06:49.202529 #76496] DEBUG -- : body :
+I, [2024-05-02T23:06:49.214810 #76496]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:06:49 GMT"}, see debug logs for body
+D, [2024-05-02T23:06:49.214853 #76496] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:07:46.565154 #76830]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users/1 returns a response which has status code 200'
+I, [2024-05-02T23:07:46.566551 #76830]  INFO -- : Sending GET request to path: "/users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:07:46.566608 #76830] DEBUG -- : body :
+I, [2024-05-02T23:07:46.579872 #76830]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:07:46 GMT"}, see debug logs for body
+D, [2024-05-02T23:07:46.579928 #76830] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:09:04.849405 #77159]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users/1 returns a response which has status code 200'
+I, [2024-05-02T23:09:04.849849 #77159]  INFO -- : Sending GET request to path: "/users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:09:04.849870 #77159] DEBUG -- : body :
+I, [2024-05-02T23:09:04.862075 #77159]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:09:04 GMT"}, see debug logs for body
+D, [2024-05-02T23:09:04.862121 #77159] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:09:22.585759 #77366]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users/1 returns a response which has status code 200'
+I, [2024-05-02T23:09:22.586322 #77366]  INFO -- : Sending GET request to path: "/users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:09:22.586346 #77366] DEBUG -- : body :
+I, [2024-05-02T23:09:22.597402 #77366]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:09:22 GMT"}, see debug logs for body
+D, [2024-05-02T23:09:22.597444 #77366] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:10:04.085153 #77553]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:10:04.085694 #77553]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:10:04.085793 #77553] DEBUG -- : body :
+I, [2024-05-02T23:10:04.098582 #77553]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:10:04 GMT"}, see debug logs for body
+D, [2024-05-02T23:10:04.098640 #77553] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:10:41.138943 #77928]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:10:41.139675 #77928]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:10:41.139696 #77928] DEBUG -- : body :
+I, [2024-05-02T23:10:41.151305 #77928]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:10:41 GMT"}, see debug logs for body
+D, [2024-05-02T23:10:41.151370 #77928] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:13:08.974549 #78925]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:13:08.975123 #78925]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:13:08.975143 #78925] DEBUG -- : body :
+I, [2024-05-02T23:13:08.987628 #78925]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:13:08 GMT"}, see debug logs for body
+D, [2024-05-02T23:13:08.987667 #78925] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:14:09.321743 #79249]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:14:09.322184 #79249]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:14:09.322210 #79249] DEBUG -- : body :
+I, [2024-05-02T23:14:09.333086 #79249]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:14:09 GMT"}, see debug logs for body
+D, [2024-05-02T23:14:09.333129 #79249] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:14:35.937148 #79465]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:14:35.937709 #79465]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:14:35.937729 #79465] DEBUG -- : body :
+I, [2024-05-02T23:14:35.948547 #79465]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:14:35 GMT"}, see debug logs for body
+D, [2024-05-02T23:14:35.948610 #79465] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:16:36.456944 #79870]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:16:36.457419 #79870]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:16:36.457439 #79870] DEBUG -- : body :
+I, [2024-05-02T23:16:36.468136 #79870]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"76", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:16:36 GMT"}, see debug logs for body
+D, [2024-05-02T23:16:36.468189 #79870] DEBUG -- : body: [{"id":"1","name":"John"},{"id":"2","name":"Sarah"},{"id":"3","name":"Joe"}]
+I, [2024-05-02T23:16:48.498792 #79995]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:16:48.499413 #79995]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:16:48.499443 #79995] DEBUG -- : body :
+I, [2024-05-02T23:16:48.510486 #79995]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"75", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:16:48 GMT"}, see debug logs for body
+D, [2024-05-02T23:16:48.510528 #79995] DEBUG -- : body: "W3siaWQiOiIxIiwibmFtZSI6IkFyanVuIn0seyJpZCI6IjIiLCJuYW1lIjoiU2FyYWgifV0="
+
+I, [2024-05-02T23:18:26.480654 #80451]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:18:26.481093 #80451]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:18:26.481113 #80451] DEBUG -- : body :
+I, [2024-05-02T23:18:26.493852 #80451]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"75", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:18:26 GMT"}, see debug logs for body
+D, [2024-05-02T23:18:26.493896 #80451] DEBUG -- : body: "W3siaWQiOiIxIiwibmFtZSI6IkFyanVuIn0seyJpZCI6IjIiLCJuYW1lIjoiU2FyYWgifV0="
+
+I, [2024-05-02T23:18:59.184532 #80930]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:18:59.185111 #80930]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:18:59.185133 #80930] DEBUG -- : body :
+I, [2024-05-02T23:18:59.197375 #80930]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"75", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:18:59 GMT"}, see debug logs for body
+D, [2024-05-02T23:18:59.197419 #80930] DEBUG -- : body: "W3siaWQiOiIxIiwibmFtZSI6IkFyanVuIn0seyJpZCI6IjIiLCJuYW1lIjoiU2FyYWgifV0="
+
+I, [2024-05-02T23:19:08.566195 #81053]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:19:08.566648 #81053]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:19:08.566670 #81053] DEBUG -- : body :
+I, [2024-05-02T23:19:08.580809 #81053]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"54", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:19:08 GMT"}, see debug logs for body
+D, [2024-05-02T23:19:08.580866 #81053] DEBUG -- : body: [{"id":"1","name":"Arjun"},{"id":"2","name":"Sarah"}]
+
+I, [2024-05-02T23:19:32.201719 #81271]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:19:32.202571 #81271]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:19:32.202597 #81271] DEBUG -- : body :
+I, [2024-05-02T23:19:32.213362 #81271]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"54", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:19:32 GMT"}, see debug logs for body
+D, [2024-05-02T23:19:32.213407 #81271] DEBUG -- : body: [{"id":"1","name":"Arjun"},{"id":"2","name":"Sarah"}]
+
+I, [2024-05-02T23:24:52.777287 #83211]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:24:52.778434 #83211]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:24:52.778470 #83211] DEBUG -- : body :
+I, [2024-05-02T23:24:52.791893 #83211]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"54", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:24:52 GMT"}, see debug logs for body
+D, [2024-05-02T23:24:52.791957 #83211] DEBUG -- : body: [{"id":"1","name":"Arjun"},{"id":"2","name":"Sarah"}]
+
+I, [2024-05-02T23:25:46.669390 #83491]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Lists User Collection is requested with GET /users returns a response which has status code 200'
+I, [2024-05-02T23:25:46.670456 #83491]  INFO -- : Sending GET request to path: "/users" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Lists"}]}, see debug logs for body
+D, [2024-05-02T23:25:46.670492 #83491] DEBUG -- : body :
+I, [2024-05-02T23:25:46.683550 #83491]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"50", "Content-Type"=>"application/json", "Date"=>"Thu, 02 May 2024 21:25:46 GMT"}, see debug logs for body
+D, [2024-05-02T23:25:46.683589 #83491] DEBUG -- : body: [{"id":1,"name":"Arjun"},{"id":2,"name":"Sarah"}]
+
