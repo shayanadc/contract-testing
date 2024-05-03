@@ -60,6 +60,8 @@ We started to write some behavioural test to cover the third api’s behaviour i
 	]```
 ```
 
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/13c22603-e24d-4273-a636-610028353f5a)
+
 Added more test while we had unit test was challenging for our team to handle, organize but we did the hard job and implemented them.
 
 While we thought everything should be good now, we released the new version but again we got the same error with the same reason which was really disappointing.
@@ -70,6 +72,8 @@ Again we categorized the cause to improve the solution…
 ![image](https://github.com/shayanadc/contract-testing/assets/6294224/cc746446-e6ae-4899-8453-50e3191d7293)
 
 Yes, they had testable documentation which really reflect their code implementation but they were free to change their implementation without informing us and we only aware of them when we failed.
+
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/9ca616de-ba24-426e-bb48-45d0162fd328)
 
 Yes, we had another test layer (BDD) but it was based on our mock and our mock was based on the version of their APIs which was easily changable.
 
@@ -98,6 +102,13 @@ Firstly, you could wait until there's an actual fire in your home to see if the 
 Alternatively, you could simply press the alarm's test button to check if it produces sound. While this method confirms that the alarm is capable of making noise, it doesn't necessarily replicate real-life conditions accurately.
 
 The most effective approach, akin to a smoke test, involves simulating a realistic scenario by introducing smoke to the alarm's sensors. This method provides a thorough evaluation of the alarm's performance in a situation closely resembling an actual fire, ensuring its reliability when it truly matters.
+
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/8f0bbfb1-99df-4dd4-90c6-e604688036e3)
+
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/9635e28b-d5ff-42c2-abd7-8f5ad7e5dad3)
+
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/86fe2f69-676d-42dc-83bc-9ff8e93e4543)
+
 
 
 ### Coding
