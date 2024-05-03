@@ -29,16 +29,36 @@ After working like a fireman to turn off the out of control fire which you have 
 
 There were two reasons:
 
-1. Third API behaviour had changed and we were using the previous version.
-
+1. The behaviour of Third API had changed and we were expecting the changed response.
 
 2. Our expectation to send/receive the request/response was not aligned with the current state of the third APIs. 
 First, we came up with the idea of keeping the partners code more align with their documentation and so we asked them to use some tools like openAPI which helps you to reflect the code implementation in documentation
+
+### Issue 1 Example
+```
+   { Id: "1" },
+   { Id: 1 }
+```
+### Issue 2 Example
+``` 
+{ Id: "1", Amount: 2000 },
+{ Id: 1, Amount: 2000, TransactionId: 56901 }
+```
 
 ### First Attempt 
 It always not easy to affect other team whether they are in your organization or not. But we successed to do that for some of the partners at least.
 
 We started to write some behavioural test to cover the third api’s behaviour in our development process with Gherkin.
+
+```
+  Scenario: Get The List Of Users
+    When send the GET request to the user endpoint
+    Then the response should be:
+	```[
+		{ Id: "1", Amount: 2000 },
+		{ Id: "1", Amount: 2000 },
+	]```
+```
 
 Added more test while we had unit test was challenging for our team to handle, organize but we did the hard job and implemented them.
 
