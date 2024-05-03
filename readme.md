@@ -81,7 +81,7 @@ In fact, we realized that what we need is more than code level and we need to ha
 
 In fact we needed to be informed by them before applying any changes to apply it in our internal code if it needs and keep our code more sync.
 
-![image](https://github.com/shayanadc/contract-testing/assets/6294224/f596ba99-8dfe-4b6a-b561-d8e493f142dd)
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/359075aa-04a0-409a-a9cf-99b15156c921)
 
 We introduced a specialized position within our company tasked with the responsibility of reaching out to our partners. Their primary objective is to gather updates regarding any modifications made or planned for their APIs
 
