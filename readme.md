@@ -95,7 +95,7 @@ Distributed system does mean decoupled system.
 
 In fact, we lessont that the it’s too late to detect the changes on your partner side, the part of their service which is related to you since your consuming it, because your customer might be get that error sooner.
 
-![image](https://github.com/shayanadc/contract-testing/assets/6294224/863beeac-e75e-4ce6-8afa-297a242a173a)
+![image](https://github.com/shayanadc/contract-testing/assets/6294224/43b50a60-ac56-4d98-905c-0af5fb504479)
 
 ## Unit Test vs Contract Test
 
