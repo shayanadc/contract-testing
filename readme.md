@@ -94,52 +94,52 @@ First, we need to have unit test in client service with mocking the provider res
 and for the response we mock:
 ```
     []User{
-					{
-						ID:   "1",
-						Name: "John",
-					},
-					{
-						ID:   "2",
-						Name: "Alice",
-					},
-				}
+		{
+			ID:   "1",
+			Name: "John",
+		},
+		{
+			ID:   "2",
+			Name: "Alice",
+		},
+	}
 ```
 
-Now, we need to add interaction with pactflow API to create and publish the pact between client and server.
+Now, we need to add interaction with pactflow API to create and publish the pact between the client and server.
 
 ```
-		pact.
-			AddInteraction().
-			Given("User Lists").
-			UponReceiving("User Collection is requested").
-			WithRequest(dsl.Request{
-				Method: "GET",
-				Path:   dsl.Term("/users", "/users*"),
-			}).
-			WillRespondWith(dsl.Response{
-				Status: 200,
-				Body: dsl.Like([]User{
-					{
-						ID:   "1",
-						Name: "John",
-					},
-					{
-						ID:   "2",
-						Name: "Alice",
-					},
-				}),
-			})
+	pact.
+		AddInteraction().
+		Given("User Lists").
+		UponReceiving("User Collection is requested").
+		WithRequest(dsl.Request{
+			Method: "GET",
+			Path:   dsl.Term("/users", "/users*"),
+		}).
+		WillRespondWith(dsl.Response{
+			Status: 200,
+			Body: dsl.Like([]User{
+				{
+					ID:   "1",
+					Name: "John",
+				},
+				{
+					ID:   "2",
+					Name: "Alice",
+				},
+			}),
+		})
 ```
 
-for specifiying the path in the interaction, we can use regex to cover all possible path variations of user endpoint like users/active or users?name=xyz to simplify the mocking and avoiding the repetitive job.
+for specifying, the path in the interaction, we can use regex to cover all possible path variations of user endpoint like users/active or users?name=xyz to simplify the mocking and avoiding the repetitive job.
 ```
-				Path:   dsl.Term("/users", "/users*"),
+	Path:   dsl.Term("/users", "/users*"),
 ```
 
-From the server side you only need to run your service against of the contract file which it creates after running the mock test of the client.
+From the server side, you only need to run your service against of the contract file which it creates after running the mock test of the client.
 
 ```
-	_, err := pact.VerifyProvider(t, types.VerifyRequest{
+	pact.VerifyProvider(t, types.VerifyRequest{
 		ProviderBaseURL: "http://127.0.0.1:8080",
 		PactURLs:        []string{"../client/pacts/example-client-example-server.json"},
 	})
@@ -150,13 +150,13 @@ but as you see, the server test is running against of a local file but in micros
 ### Checkout Step-Two
 
 
-we only need to call pact broker to upload the contract after writing by client side
+we only need to call the pact broker to upload the contract after writing by the client side
 
 ```
 	publisher.Publish(types.PublishRequest{})
 ```
-and from the server side, instead of checking the interaction from local file, check it with broker:
+and from the server side, instead of checking the interaction from the local file, check it with the broker:
 
 ```
-  pact.VerifyProvider(t, types.VerifyRequest{})
+	pact.VerifyProvider(t, types.VerifyRequest{})
 ```
