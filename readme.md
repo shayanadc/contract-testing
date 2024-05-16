@@ -1,5 +1,8 @@
 # Collaborating with External Systems in Software Development
 
+<img width="819" alt="Screenshot 2024-05-16 at 22 18 34" src="https://github.com/shayanadc/contract-testing/assets/6294224/a2a3d784-b68f-4fc6-a9bb-f404d180438f">
+
+
 ## Distributed system does not mean Decoupled systems
 
 As a developer, when developing a feature, you often need to collaborate and communicate with other systems/services to acquire the necessary information that isn't available on your end.
