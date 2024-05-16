@@ -1,3 +1,5 @@
+## Contract Testing
+#### control what is not under your control...
 As a developer, when developing a feature, you often need to collaborate and communicate with other systems/services to acquire the necessary information that isn't available on your end.
 
 This means your application needs to communicate with another application or service to request data in the manner dictated by the server for all its consumers, including yourself.
