@@ -16,6 +16,8 @@ What we typically do is attempt to adapt to changes because we've learned that t
 
 Microservice architecture is more common than ever today. The primary goal of microservice architecture is to segregate concerns, meaning each service maintains its API. Changes to these services may not be under your control, yet you will be affected by them, even if the service providers are unaware of who is consuming their data.
 
+<img width="1047" alt="Screenshot 2024-05-16 at 22 23 20" src="https://github.com/shayanadc/contract-testing/assets/6294224/9b40997b-aec7-42c6-8ac1-7e399627ea2d">
+
 ## Strategies for Handling External Communication
 
 Let's consider some possible ways to handle this situation, step by step, and weigh their pros and cons.
@@ -47,6 +49,8 @@ There are usually two main reasons for failures in communicating with other serv
 
 We typically handle this situation with the mindset that change is inevitable, and we aim to minimize its impact.
 
+<img width="1295" alt="Screenshot 2024-05-16 at 22 24 56" src="https://github.com/shayanadc/contract-testing/assets/6294224/05ac7bf0-e7b2-42f7-8e98-2ddc5df0a6d0">
+
 ### Auto-Generated Tools for API Specification
 
 Firstly, we may request that the data provider use auto-generated tools for their API specification to ensure compatibility between the API docs and the real implementation. However, this doesn't entirely solve the problem since the provider can still break communication by changing the specification unexpectedly.
@@ -68,6 +72,8 @@ So, what's the better solution? Let's recap what we want:
 
 ### Introduction to Contract Testing
 
+<img width="945" alt="Screenshot 2024-05-16 at 22 25 29" src="https://github.com/shayanadc/contract-testing/assets/6294224/24e10a0c-63b5-47d6-beeb-ff727fd19cc2">
+
 Contract testing is a technique that ensures confidence in the established communication between two parties by testing the agreement or API contract between them before each deployment.
 
 ### Pactflow Implementation
@@ -81,5 +87,7 @@ There are various implementations of contract testing, but here I'll explain Pac
 The consumer uses the Pactflow SDK to generate the contract, a JSON file, by running mock tests. The server-side then tests this contract file against its API.
 
 Pushing changes is only possible when both sides have passed their contract tests.
+
+
 
 In microservice architecture, since the client and server are typically not in the same repository or machine, we need to keep the contract in the cloud accessible to both parties, a feature provided by Pact. Pact broker also handles finding the corresponding contract of each provider that needs to be committed to run and also the Work In Progress (WIP) branch contract that should be run against the server API but should stop the pipeline if necessary.
